@@ -1,18 +1,17 @@
-/* General layout */
 #site_wrap {
     height: 100vh;
     display: grid;
     grid-template-rows: 50px 50px 200px 1fr; 
     grid-template-areas: 
-        "top_bar"
-        "secondary_bar"
-        "main_results"
-        "news_section";
+        "barra_arriba"
+        "barra_secundaria"
+        "resultados"
+        "noticias";
 }
 
-.top_bar {
+.barra_arriba {
     background-color: red;
-    grid-area: top_bar;
+    grid-area: barra_arriba;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,9 +19,9 @@
     color: white;
 }
 
-.secondary_bar {
+.barra_secundaria {
     background-color: green;
-    grid-area: secondary_bar;
+    grid-area: barra_secundaria;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,9 +29,9 @@
     color: white;
 }
 
-.main_results {
+.resultados {
     background-color: blue;
-    grid-area: main_results;
+    grid-area: resultados;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,9 +39,9 @@
     color: white;
 }
 
-.news_section {
+.noticias {
     background-color: orange;
-    grid-area: news_section;
+    grid-area: noticias;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,25 +54,25 @@
         display: grid;
         grid-template-rows: auto;
         grid-template-areas: 
-            "top_bar"
-            "secondary_bar"
-            "main_results"
-            "news_section"; 
+            "barra_arriba"
+            "barra_secundaria"
+            "resultados"
+            "noticias"; 
     }
 
-    .top_bar {
+    .barra_arriba {
         font-size: 16px;
     }
 
-    .secondary_bar {
+    .barra_secundaria {
         font-size: 14px;
     }
 
-    .main_results {
+    .resultados {
         font-size: 18px;
     }
 
-    .news_section {
+    .noticias {
         font-size: 18px;
     }
 }
